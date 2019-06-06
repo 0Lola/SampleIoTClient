@@ -42,9 +42,6 @@ public class Api {
 
     public interface ApiInterface {
 
-        @GET("/")
-        Call<Object> login();
-
         // 取得與該gateway所綁定的裝置列表
         @GET("/device")
         Call<List<Device>> readDevices();

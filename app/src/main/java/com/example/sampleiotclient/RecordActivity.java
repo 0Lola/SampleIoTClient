@@ -33,15 +33,15 @@ public class RecordActivity extends AppCompatActivity {
         init();
     }
 
-    private void init(){
+    private void init() {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         readRecords();
     }
 
-    private void setAdapter(){
+    private void setAdapter() {
         recordRecyclerView = findViewById(R.id.record_recycler_view);
-        recordAdapter = new RecordAdapter(this,privacyChoiceResponses);
+        recordAdapter = new RecordAdapter(this, privacyChoiceResponses);
         recordRecyclerView.setAdapter(recordAdapter);
         recordRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

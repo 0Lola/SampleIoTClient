@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import com.example.sampleiotclient.R;
 import com.example.sampleiotclient.common.Api;
-import com.example.sampleiotclient.common.Config;
 import com.example.sampleiotclient.pojo.auth.User;
 import com.example.sampleiotclient.pojo.index.PrivacyChoiceResponse;
 import com.example.sampleiotclient.pojo.index.PrivacyPolicyReportResponse;

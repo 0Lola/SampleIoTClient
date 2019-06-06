@@ -32,13 +32,13 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    private void init(){
+    private void init() {
         readDevices();
     }
 
-    private void setAdapter(){
+    private void setAdapter() {
         deviceRecyclerView = findViewById(R.id.device_recycler_view);
-        deviceAdapter = new DeviceAdapter(this,devices);
+        deviceAdapter = new DeviceAdapter(this, devices);
         deviceRecyclerView.setAdapter(deviceAdapter);
         deviceRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

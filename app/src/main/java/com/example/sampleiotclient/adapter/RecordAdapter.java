@@ -39,7 +39,7 @@ public class RecordAdapter extends RecyclerView.Adapter<RecordAdapter.MyViewHold
         mholder.position = position;
         mholder.response = response;
         mholder.textDeviceName.setText(response.getPrivacyChoice().getPrivacyContent().getDevice().getName());
-        mholder.textPrivacyIndex.setText("隱私政策 "+ response.getPrivacyChoice().getPrivacyContent().getPolicy().getId());
+        mholder.textPrivacyIndex.setText("隱私政策 " + response.getPrivacyChoice().getPrivacyContent().getPolicy().getId());
         mholder.textPrivacyDescription.setText(response.getPrivacyChoice().getPrivacyContent().getPolicy().getDescription());
         mholder.textPrivacyContent.setText(response.getPrivacyChoice().isAccepted() ? "同意" : "拒絕");
         mholder.textPrivacyContent.setBackground(response.getPrivacyChoice().isAccepted() ?

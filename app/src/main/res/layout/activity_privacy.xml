@@ -49,8 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_lg"
             android:layout_marginRight="@dimen/margin_lg"
-            android:paddingRight="@dimen/padding_sm"
             android:paddingLeft="@dimen/padding_sm"
+            android:paddingRight="@dimen/padding_sm"
             android:paddingBottom="@dimen/margin_xs"
             tools:text="version" />
 
@@ -60,10 +60,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_lg"
             android:layout_marginRight="@dimen/margin_lg"
-            android:paddingRight="@dimen/padding_sm"
-            android:paddingLeft="@dimen/padding_sm"
-            android:paddingBottom="@dimen/margin"
             android:background="@drawable/border_bottom"
+            android:paddingLeft="@dimen/padding_sm"
+            android:paddingRight="@dimen/padding_sm"
+            android:paddingBottom="@dimen/margin"
             tools:text="report description" />
 
         <TextView
