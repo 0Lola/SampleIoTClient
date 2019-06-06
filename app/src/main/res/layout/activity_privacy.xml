@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".PrivacyActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        tools:context=".component.privacy.PrivacyActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_lg"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:layout_marginRight="@dimen/margin_lg"
+            android:layout_marginBottom="@dimen/margin"
+            android:background="@drawable/border_bottom_xl"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_sm">
+
+            <TextView
+                android:id="@+id/title_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_privacy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_lg" />
+
+            <Button
+                android:id="@+id/button_download_file"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_detect_report" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_report_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lg"
+            android:layout_marginRight="@dimen/margin_lg"
+            android:paddingRight="@dimen/padding_sm"
+            android:paddingLeft="@dimen/padding_sm"
+            android:paddingBottom="@dimen/margin_xs"
+            tools:text="version" />
+
+        <TextView
+            android:id="@+id/text_report_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lg"
+            android:layout_marginRight="@dimen/margin_lg"
+            android:paddingRight="@dimen/padding_sm"
+            android:paddingLeft="@dimen/padding_sm"
+            android:paddingBottom="@dimen/margin"
+            android:background="@drawable/border_bottom"
+            tools:text="report description" />
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_lg"
+            android:layout_marginTop="@dimen/margin_sm"
+            android:layout_marginRight="@dimen/margin_lg"
+            android:padding="@dimen/padding_sm"
+            android:text="@string/privacy_request" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/privacy_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_sm"
+            android:layout_marginRight="@dimen/margin_sm"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/padding"
+            tools:listitem="@layout/recycler_view_privacy" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

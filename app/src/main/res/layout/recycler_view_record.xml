@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/record_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_sm"
+    android:background="@drawable/border_bottom"
+    android:padding="@dimen/margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="溫度感測器" />
+
+            <TextView
+                android:id="@+id/text_privacy_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_xs"
+                android:paddingBottom="@dimen/padding_xs"
+                android:textSize="@dimen/font_sm"
+                tools:text="隱私政策 1" />
+
+            <TextView
+                android:id="@+id/text_privacy_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="本APP會蒐集使用者周遭溫度作為第三方資料之地區環境分析資料。" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_privacy_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_sm"
+                    android:layout_marginBottom="@dimen/margin_sm"
+                    android:paddingLeft="@dimen/padding_sm"
+                    android:paddingTop="@dimen/padding_xs"
+                    android:paddingRight="@dimen/padding_sm"
+                    android:paddingBottom="@dimen/padding_xs"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_sm"
+                    tools:text="同意" />
+
+                <TextView
+                    android:id="@+id/text_privacy_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_sm"
+                    android:layout_marginTop="@dimen/margin_sm"
+                    android:layout_marginBottom="@dimen/margin_sm"
+                    android:background="@drawable/light_radius_background"
+                    android:paddingLeft="@dimen/padding_sm"
+                    android:paddingTop="@dimen/padding_xs"
+                    android:paddingRight="@dimen/padding_sm"
+                    android:paddingBottom="@dimen/padding_xs"
+                    android:textSize="@dimen/font_sm"
+                    tools:text="2019-01-12 13:52" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
